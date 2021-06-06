@@ -17,7 +17,7 @@ describe('RandomNumber', () => {
     expect(randomNumber).toBeLessThanOrEqual(10)
   })
 
-  test('If button is clicked, randomNumber should be between 200 and 300', () => {
+  test('If button is clicked, randomNumber should be between 200 and 300', async () => {
     const wrapper = mount(RandomNumber, {
       propsData: {
         min: 200,
@@ -31,4 +31,5 @@ describe('RandomNumber', () => {
     expect(randomNumber).toBeGreaterThanOrEqual(200)
     expect(randomNumber).toBeLessThanOrEqual(300)
   })
+
 })
